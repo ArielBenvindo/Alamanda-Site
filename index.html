@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alamanda</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/TweenMax.min.js"></script>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Alamanda</h1>
+        <span>floricultura</span>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="logo"><img src="img/sunflower 1.png"></li>
+                <li class="active">Home</li>
+                <li>Services</li>
+                <li>Produtos</li>
+                <li>Conta</li>
+                <li><a href="#" class="signup-btn"><span>Sign Up</span></a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="app-text">
+                <h1>Conheça a nossa floricultura<br>e nossos produtos!</h1>
+                <p>Nossa floricultura é voltada para o arranjo e buquês de flores nativas brasileiras<br>pois assim, ajudamos a 
+                    divulgar mais as nossa bela flora e favorecemos os pequenos e médios produtores.</p>
+            </div>
+            <div class="app-picture">
+                <img src="./img/74c1cc5deb9a17793da1fb0084c2d3d1.png">
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><i class="fa fa-facebook-f"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-linkedin"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+        })
+        TweenMax.to(".overlay span", 2, {
+            delay: .3,
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+        })
+        TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".menu-links ul li", 1, {
+            delay: 3.2,
+            opacity: 0,
+            x: -100,
+            ease: Expo.easeInOut
+        }, 0.8)
+    </script>
+</body>
+</html>

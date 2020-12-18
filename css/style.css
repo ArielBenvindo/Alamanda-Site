@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: #fff;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image:url(../img/pexels-markus-spiske-131772.jpg);
+    background-size: cover;
+    top: 0%;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .overlay h1 {
+    font-size: 100px;
+    letter-spacing: 20px;
+    color: white;
+  }
+  
+  .overlay span {
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: white;
+  }
+  
+.container{
+    width: 100%;
+    height: 100%;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li{
+    font-size: 18px;
+    font-weight: 500;
+    list-style: none;
+    margin: 0 20px;
+    color: #000;
+    cursor: pointer;
+    z-index: 1;
+}
+.logo img{
+    width: 50px;
+    margin-top:-20px ;
+    margin-right: 48px;
+}
+.active{
+    color: #F6AF04 !important;
+}
+.signup-btn{
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color:#000;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient( #fff, #fff),radial-gradient(circle at top left,#EFEB77,#F6AF04);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.signup-btn span{
+    display: block;
+    padding: 8px 20px;
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 35%;
+    left: 130px;
+    position: absolute;
+    box-sizing: content-box;
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+.app-text h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+    color:black;
+}
+.app-text p{
+    font-size: 15px;
+    width: 650px;
+    position: relative;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+.app-picture{
+    width:50%;
+    float: right;
+}
+.app-picture img{
+   width: 100%;
+   margin-top: -160px;
+   padding-left: 50px;
+}
+.menu-links{
+    left:0;
+    bottom: 60px;
+    position: absolute;
+    margin-left: 70px;
+}
+.menu-links ul{
+    display: inline-flex;
+    margin: 40px;
+}
+.menu-links ul li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 80px;
+}
+.menu-links ul li .fa{
+    font-size: 25px;
+}
+.menu-links ul li .fa:hover{
+    color:#F6AF04;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 300px;
+    width: 400px;
+    height: 320px;
+    background:#FFFB8A;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    top: 75%;
+    right: 10px;
+    width: 400px;
+    height: 100px;
+    background:#FFFB8A;
+}
